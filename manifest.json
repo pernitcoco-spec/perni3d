@@ -1,0 +1,16 @@
+{
+  "short_name": "PokeRojo",
+  "name": "Pokémon Rojo GBA Emulator",
+  "icons": [
+    {
+      "src": "https://emulatorjs.org",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/pokerojo/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "orientation": "landscape"
+}
