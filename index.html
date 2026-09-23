@@ -22,8 +22,15 @@
             EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
             EJS_gameUrl = "Pokemon - Edicion Roja (Spain) (SGB Enhanced).zip";
             EJS_browserMode = "mobile";
-            EJS_WebGL = true;
-            EJS_pwa = true;
+EJS_WebGL = true;
+EJS_pwa = true;
+
+// 🚀 CONFIGURACIÓN OCULTA PARA MÁXIMA VELOCIDAD EN MÓVILES:
+EJS_settings = {
+    "mgba_frameskip": "1",         // Salta 1 fotograma cuando el móvil se sature para mantener la velocidad fluida
+    "mgba_sound_rate": "22050",    // Baja el audio a calidad estándar (ahorra muchísimo procesador)
+    "sound": true                  // Mantiene el sonido activado pero optimizado
+};
         </script>
         <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
     </body>
