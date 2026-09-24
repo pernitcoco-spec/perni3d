@@ -1,15 +1,33 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <!-- Evita que el usuario haga zoom accidentalmente en el móvil y descuadre los controles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
         <!--HTML file auto generated using EmulatorJS codehelper-->
         <style>
-            body, html {
+            /* Fuerza a la página web a ocupar exactamente el 100% de la pantalla del móvil */
+            html, body {
                 margin: 0;
                 padding: 0;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                background-color: #000; /* Fondo negro para que no se vean bordes blancos */
+            }
+            /* Contenedor del juego expandido a pantalla completa real */
+            #game-container {
+                width: 100%;
+                height: 100%;
+            }
+            #game {
+                width: 100%;
+                height: 100%;
             }
         </style>
     </head>
     <body>
-        <div style="width:100%;height:100%;max-width:100%">
+        <div id="game-container">
             <div id="game"></div>
         </div>
         <script>
